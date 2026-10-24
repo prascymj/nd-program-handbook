@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>โครงสร้างไฟล์ | คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่</title>
+<meta name="description" content="02 โครงสร้างไฟล์">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+Thai:wght@600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <a class="brand" href="index.html">คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่<span>Non-Degree สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์ มฟล.</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="side">สารบัญ</button>
+</div></header>
+<div class="shell">
+<nav class="side" id="side" aria-label="สารบัญ">
+<div class="grp">เริ่มต้น</div><ol>
+<li><a href="index.html"><span class="n">00</span><span>ภาพรวมและปฏิทินทั้งรุ่น</span></a></li>
+<li><a href="roles.html"><span class="n">01</span><span>ใครทำอะไร</span></a></li>
+<li><a href="files.html" aria-current="page"><span class="n">02</span><span>โครงสร้างไฟล์</span></a></li>
+</ol>
+<div class="grp">ขั้นตอนตามช่วง</div><ol>
+<li><a href="p1-proposal.html"><span class="n">P1</span><span>ข้อเสนอและขออนุมัติ</span></a></li>
+<li><a href="p2-design.html"><span class="n">P2</span><span>ออกแบบหลักสูตร</span></a></li>
+<li><a href="p3-admission.html"><span class="n">P3</span><span>ประชาสัมพันธ์และรับสมัคร</span></a></li>
+<li><a href="p4-prelaunch.html"><span class="n">P4</span><span>เตรียมก่อนเปิด</span></a></li>
+<li><a href="p5-operation.html"><span class="n">P5</span><span>ดำเนินการรายโมดูล</span></a></li>
+<li><a href="p6-assessment.html"><span class="n">P6</span><span>ประเมินผลและส่งคะแนน</span></a></li>
+<li><a href="p7-certificate.html"><span class="n">P7</span><span>ออกใบประกาศ</span></a></li>
+<li><a href="p8-closeout.html"><span class="n">P8</span><span>ปิดโครงการ</span></a></li>
+</ol>
+<div class="grp">การเงินและอนุมัติ</div><ol>
+<li><a href="finance.html"><span class="n">F1</span><span>การเงิน</span></a></li>
+<li><a href="approvals.html"><span class="n">F2</span><span>เอกสารและการอนุมัติ</span></a></li>
+</ol>
+<div class="grp">เครื่องมือ</div><ol>
+<li><a href="checklist.html"><span class="n">C1</span><span>เช็กลิสต์ทั้งรุ่น</span></a></li>
+<li><a href="lessons.html"><span class="n">C2</span><span>บทเรียนและข้อควรระวัง</span></a></li>
+</ol>
+</nav>
+<main>
+<div class="eyebrow">02 โครงสร้างไฟล์</div>
+<h1>โครงสร้างไฟล์ที่แนะนำ</h1>
+<p class="lede">วางโฟลเดอร์ตามช่วงงานตั้งแต่วันแรก ทุกคนในทีมจะหาเอกสารเจอโดยไม่ต้องถาม และตอนปิดโครงการจะรวบรวมหลักฐานได้ทันที โครงสร้างนี้ปรับจากที่ใช้จริงในรุ่น 1 และ 2</p>
+
+<h2>ระดับหลักสูตร (ใช้ข้ามรุ่น)</h2>
+<pre class="tree">ชื่อหลักสูตร/
+├── 00_คู่มือและแม่แบบ/        <span class="c">แม่แบบบันทึก TOR หนังสือเชิญ ไฟล์คะแนน แม่แบบงบ</span>
+├── 01_ระเบียบ/                 <span class="c">ประกาศ สป.อว. ระเบียบ กค. หนังสือเวียน (PDF ต้นฉบับ)</span>
+├── 02_หลักสูตรแกนกลาง/          <span class="c">PLO ทักษะ การเชื่อมมาตรฐานอาชีพ ใช้ซ้ำทุกรุ่น</span>
+├── Batch_1_Report/             <span class="c">รุ่นที่ปิดแล้ว เก็บเป็นคลัง</span>
+├── Batch_2_Planning/           <span class="c">รุ่นที่กำลังวางแผน (ดูด้านล่าง)</span>
+├── Batch_2_Operation/          <span class="c">เอกสารระหว่างดำเนินการ รายสัปดาห์</span>
+└── Batch_3_Planning/           <span class="c">ร่างรุ่นถัดไป</span></pre>
+
+<h2>ระดับรุ่น (หนึ่งชุดต่อรุ่น)</h2>
+<pre class="tree">Batch_N/
+├── P1_ข้อเสนอ/
+│   ├── drafts/                <span class="c">ร่างแต่ละรอบ ใส่วันที่ท้ายชื่อ เช่น -Apr30 -May29</span>
+│   ├── feedback/              <span class="c">หนังสือ สป.อว. ข้อเสนอแนะกรรมการ คู่มือขั้นตอน ND</span>
+│   ├── presentation/          <span class="c">สไลด์นำเสนอผลรุ่นก่อน</span>
+│   └── Submit/                <span class="c">เฉพาะชุดที่อัปโหลดจริง ไม่ปนร่าง</span>
+├── P2_ออกแบบหลักสูตร/
+│   ├── courselayout/          <span class="c">เอกสารออกแบบรายโมดูล ตารางรวม</span>
+│   └── teaching-plan/         <span class="c">แผนการสอนรายสัปดาห์ StudyPlan.csv</span>
+├── P3_รับสมัคร/                <span class="c">[ข้อมูลส่วนบุคคล] ใบสมัคร คะแนนสอบ ผลสัมภาษณ์</span>
+├── P4_เตรียมก่อนเปิด/
+│   ├── งบประมาณ/              <span class="c">แม่แบบตั้งกรอบงบ บันทึกยืมเงิน กรอบงบรายกิจกรรม</span>
+│   ├── TOR/                   <span class="c">TOR ใบเสนอราคา แยกโฟลเดอร์ย่อยต่อรายการจ้าง</span>
+│   ├── student-handbook/      <span class="c">คู่มือผู้เรียน (เผยแพร่ได้)</span>
+│   └── event-W1/              <span class="c">ผังโต๊ะ rooming list ตารางกิจกรรม</span>
+├── P5_ดำเนินการ/
+│   ├── M1-admin/ ... M5-admin/ <span class="c">รหัสเช็กชื่อ คู่มืออาจารย์ บันทึกรายเดือน</span>
+│   └── W20-วิทยากร-ชื่อ-วันที่/   <span class="c">หนังสือรายครั้ง ตั้งชื่อ สัปดาห์-เรื่อง-วันที่</span>
+├── P6_คะแนน/                   <span class="c">[ข้อมูลส่วนบุคคล] Scoring Master ไฟล์ส่งคะแนน</span>
+├── P7_ใบประกาศ/                <span class="c">[ข้อมูลส่วนบุคคล] ไฟล์นำเข้าระบบ ใบประกาศรายคน</span>
+├── P8_ปิดโครงการ/              <span class="c">รายงานฉบับสมบูรณ์ ถอดบทเรียน เอกสารปิดจ้างเหมา</span>
+└── progress-report/           <span class="c">รายงานความก้าวหน้าต่อผู้บริหาร</span></pre>
+
+<h2>คลังหลักฐานที่ต้องเก็บ</h2>
+<p>เมื่อเชื่อมกับมาตรฐานอาชีพหรือถูกตรวจเยี่ยม ต้องเรียกหลักฐานได้ทันที จัดเก็บดิจิทัลอย่างน้อย 2 ปี จำกัดสิทธิ์ตาม PDPA</p>
+<div class="tbl"><table>
+<thead><tr><th>โฟลเดอร์</th><th>เก็บอะไร</th></tr></thead>
+<tbody>
+<tr><td class="nw">01 รับสมัคร</td><td>ใบสมัคร ผลคัดเลือก หนังสือแจ้งรายชื่อ</td></tr>
+<tr><td class="nw">02 การเข้าเรียน</td><td>บันทึกเช็กชื่อรายวัน รายงาน Zoom</td></tr>
+<tr><td class="nw">03 คะแนน</td><td>คะแนนรายโมดูล ไฟล์คะแนนกลาง</td></tr>
+<tr><td class="nw">04 หลักฐานสมรรถนะ</td><td>ชิ้นงาน Logbook ผลสอบ</td></tr>
+<tr><td class="nw">05 วิดีโอ</td><td>บันทึกการสอนและการนำเสนอ</td></tr>
+<tr><td class="nw">06 ใบประกาศ</td><td>ไฟล์ใบประกาศที่ออกแล้ว ทะเบียนการรับ</td></tr>
+<tr><td class="nw">07 รายงาน</td><td>รายงานต่อ สป.อว. และ สคช.</td></tr>
+<tr><td class="nw">08 การเงิน</td><td>บันทึกอนุมัติ ใบสำคัญรับเงิน ใบเสร็จ หลักฐานตรวจรับ</td></tr>
+</tbody></table></div>
+
+<h2>กติกาการตั้งชื่อไฟล์</h2>
+<ul>
+  <li><b>เลขนำหน้า</b> (<code>00-</code> <code>01-</code>) สำหรับไฟล์ที่อยู่ในชุดยื่น ลำดับตรงกับรายการแนบ</li>
+  <li><b>วันที่ท้ายชื่อ</b> สำหรับร่างแต่ละรอบ เช่น <code>proposal-May29.docx</code> ฉบับสุดท้ายเติม <code>-final</code></li>
+  <li><b>ไฟล์รายคน</b> ใช้ <code>รหัสผู้เรียน_ชื่อเอกสาร</code> ไม่ใช้ชื่อคน</li>
+  <li><b>ทุกโฟลเดอร์มี README</b> สั้น ๆ บอกว่าเก็บอะไร สถานะล่าสุด และไฟล์ไหนเป็นฉบับใช้งาน</li>
+  <li><b>เก็บต้นฉบับแก้ไขได้คู่ PDF</b> (.md หรือ .docx คู่กับ .pdf ที่ลงนามแล้ว)</li>
+</ul>
+
+<div class="box bad">
+  <span class="lbl bad">ห้ามขึ้นที่สาธารณะ</span>
+  <ul>
+    <li>โฟลเดอร์รับสมัคร คะแนน ใบประกาศ (เลขบัตรประชาชน เบอร์โทร ชื่อ คะแนน)</li>
+    <li>ลิงก์ Zoom รหัส host รหัสเช็กชื่อ ลิงก์ Google Form และ Sheet ที่แก้ไขได้</li>
+    <li>สำเนาบัตรและสมุดบัญชีของวิทยากร</li>
+  </ul>
+  <p>ถ้าทำคู่มือผู้เรียนเป็นเว็บสาธารณะ ให้แยก repo เฉพาะเนื้อหาที่เผยแพร่ได้</p>
+</div>
+<nav class="pn" aria-label="หน้าก่อนและถัดไป">
+<a href="roles.html"><small>ก่อนหน้า</small>01 ใครทำอะไร</a>
+<a class="next" href="p1-proposal.html"><small>ถัดไป</small>P1 ข้อเสนอและขออนุมัติ</a>
+</nav>
+<footer>คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่ ปรับปรุง 24 ต.ค. 2569 สรุปจากการดำเนินงานรุ่น 1 (2568) และรุ่น 2 (2569) ใช้เป็นแนวทาง ตรวจระเบียบและอัตราล่าสุดกับฝ่ายการเงินทุกครั้ง</footer>
+</main>
+</div>
+<script>
+(function () {
+  var b = document.querySelector('.menu-btn'), s = document.getElementById('side');
+  if (b && s) b.addEventListener('click', function () {
+    var o = s.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+  });
+})();
+</script>
+
+</body>
+</html>

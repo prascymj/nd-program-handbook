@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ประเมินผลและส่งคะแนน | คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่</title>
+<meta name="description" content="P6 ประเมินผลและส่งคะแนน">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+Thai:wght@600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <a class="brand" href="index.html">คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่<span>Non-Degree สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์ มฟล.</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="side">สารบัญ</button>
+</div></header>
+<div class="shell">
+<nav class="side" id="side" aria-label="สารบัญ">
+<div class="grp">เริ่มต้น</div><ol>
+<li><a href="index.html"><span class="n">00</span><span>ภาพรวมและปฏิทินทั้งรุ่น</span></a></li>
+<li><a href="roles.html"><span class="n">01</span><span>ใครทำอะไร</span></a></li>
+<li><a href="files.html"><span class="n">02</span><span>โครงสร้างไฟล์</span></a></li>
+</ol>
+<div class="grp">ขั้นตอนตามช่วง</div><ol>
+<li><a href="p1-proposal.html"><span class="n">P1</span><span>ข้อเสนอและขออนุมัติ</span></a></li>
+<li><a href="p2-design.html"><span class="n">P2</span><span>ออกแบบหลักสูตร</span></a></li>
+<li><a href="p3-admission.html"><span class="n">P3</span><span>ประชาสัมพันธ์และรับสมัคร</span></a></li>
+<li><a href="p4-prelaunch.html"><span class="n">P4</span><span>เตรียมก่อนเปิด</span></a></li>
+<li><a href="p5-operation.html"><span class="n">P5</span><span>ดำเนินการรายโมดูล</span></a></li>
+<li><a href="p6-assessment.html" aria-current="page"><span class="n">P6</span><span>ประเมินผลและส่งคะแนน</span></a></li>
+<li><a href="p7-certificate.html"><span class="n">P7</span><span>ออกใบประกาศ</span></a></li>
+<li><a href="p8-closeout.html"><span class="n">P8</span><span>ปิดโครงการ</span></a></li>
+</ol>
+<div class="grp">การเงินและอนุมัติ</div><ol>
+<li><a href="finance.html"><span class="n">F1</span><span>การเงิน</span></a></li>
+<li><a href="approvals.html"><span class="n">F2</span><span>เอกสารและการอนุมัติ</span></a></li>
+</ol>
+<div class="grp">เครื่องมือ</div><ol>
+<li><a href="checklist.html"><span class="n">C1</span><span>เช็กลิสต์ทั้งรุ่น</span></a></li>
+<li><a href="lessons.html"><span class="n">C2</span><span>บทเรียนและข้อควรระวัง</span></a></li>
+</ol>
+</nav>
+<main>
+<div class="eyebrow">P6 ประเมินผลและส่งคะแนน</div>
+<h1>ประเมินผลและส่งคะแนน</h1>
+<p class="lede">ใช้ไฟล์คะแนนกลางไฟล์เดียว อาจารย์กรอกเฉพาะคะแนนดิบในแท็บโมดูลของตัวเอง ที่เหลือคำนวณอัตโนมัติ ทั้งเกรด ระดับทักษะ และสถานะใบประกาศ</p>
+
+<div class="strip">
+  <div><div class="k">ช่วงเวลา</div><div class="v">ท้ายทุกโมดูล + หลังจบหลักสูตร</div></div>
+  <div><div class="k">ผู้รับผิดชอบ</div><div class="v">อาจารย์ประจำโมดูล (กรอก) + ผู้รับผิดชอบหลักสูตร (ตรวจ)</div></div>
+  <div><div class="k">ผลลัพธ์</div><div class="v">เกรดรายโมดูล ระดับทักษะ รายชื่อผู้ผ่าน</div></div>
+  <div><div class="k">เงิน</div><div class="v">ไม่มี</div></div>
+</div>
+
+<h2>โครงไฟล์คะแนนกลาง (Scoring Master)</h2>
+<div class="tbl"><table>
+<thead><tr><th>แท็บ</th><th>ใครแก้</th><th>เนื้อหา</th></tr></thead>
+<tbody>
+<tr><td>คำแนะนำ</td><td>ผู้รับผิดชอบหลักสูตร</td><td>วิธีกรอก กำหนดส่ง สูตรแปลง</td></tr>
+<tr><td>W1, M1 ถึง M5</td><td>อาจารย์ประจำโมดูล</td><td>คะแนน 0 ถึง 100 ตาม rubric รายชิ้นงาน</td></tr>
+<tr><td>เกรด</td><td>สูตรเท่านั้น</td><td>แปลงร้อยละเป็น 0 ถึง 4 เกรดรายโมดูล ผลรวม</td></tr>
+<tr><td>Skills</td><td>สูตรเท่านั้น</td><td>ทักษะ 8 ด้าน ถ่วงน้ำหนักจากหลายโมดูล ระดับ 1 ถึง 3</td></tr>
+<tr><td>สรุป Certificate</td><td>สูตรเท่านั้น</td><td>ผ่านหรือไม่ และได้ใบอะไรบ้าง</td></tr>
+</tbody></table></div>
+
+<h2>สูตรที่ใช้ในรุ่น 2</h2>
+<ul>
+  <li><b>แปลงคะแนน:</b> ร้อยละของโมดูล หาร 25 ได้คะแนน 0 ถึง 4</li>
+  <li><b>M5 เป็น S/U:</b> S เมื่อได้ 2.0 ขึ้นไป</li>
+  <li><b>ผ่านหลักสูตร:</b> M1 ถึง M4 ไม่มี F, M5 ได้ S และเข้าเรียนครบเกณฑ์</li>
+  <li><b>ระดับทักษะ:</b> ระดับ 3 เมื่อได้ 3.0 ขึ้นไป, ระดับ 2 เมื่อได้ 2.0 ขึ้นไป, ระดับ 1 เมื่อได้ 1.0 ขึ้นไป ใช้วาดกราฟเรดาร์ในใบแสดงทักษะ</li>
+  <li><b>มุมมองรายงานราชการ:</b> คะแนนรวมถ่วงน้ำหนัก 0 ถึง 100 ผ่านที่ 60</li>
+</ul>
+<div class="tbl"><table>
+<thead><tr><th>เกรด</th><th>A</th><th>B+</th><th>B</th><th>C+</th><th>C</th><th>D+</th><th>D</th><th>F</th></tr></thead>
+<tbody><tr><td>คะแนน 0 ถึง 4</td><td>2.75</td><td>2.5</td><td>2.25</td><td>2.0</td><td>1.75</td><td>1.5</td><td>1.25</td><td>ต่ำกว่า 1.25</td></tr></tbody>
+</table></div>
+<p class="small">ตัวเลขในตารางคือคะแนนขั้นต่ำของแต่ละเกรด สูตรนี้เป็นของรุ่น 2 รุ่น 1 ใช้สูตรอื่น (เช่น M1 = UI/UX ร้อยละ 70 + Creativity ร้อยละ 30) กำหนดของรุ่นตัวเองให้ชัดและประกาศตั้งแต่ปฐมนิเทศ</p>
+
+<h2>ขั้นตอน</h2>
+<ol class="steps">
+  <li><div><b>ประกาศกำหนดส่งคะแนนทั้งรุ่นตั้งแต่ต้น</b><div class="d">รุ่น 2 กำหนดราว 3 ถึง 5 วันหลังจบแต่ละโมดูล:
+    <ul><li>W1: 27 ก.ค.</li><li>M1: 23 ส.ค.</li><li>M2: 20 ก.ย.</li><li>M3: 30 ต.ค.</li><li>M4: 20 พ.ย.</li><li>M5: 20 ธ.ค.</li></ul></div></div></li>
+  <li><div><b>อาจารย์กรอกคะแนนดิบ</b><div class="d">ในแท็บของตัวเองเท่านั้น ห้ามพิมพ์ทับช่องสูตร</div></div></li>
+  <li><div><b>ผู้รับผิดชอบหลักสูตรตรวจ</b><div class="d">ช่องว่าง คะแนนผิดปกติ ผู้เรียนที่เสี่ยงไม่ผ่าน แจ้งผู้เรียนและให้แก้ตัวตามกติกา</div></div></li>
+  <li><div><b>ส่งผลการเรียน</b><div class="d">หลังจบหลักสูตร ส่งผลให้หน่วยงานที่ออกใบประกาศ (ผ่าน MLii) ตามแม่แบบนำเข้า:
+    <ul><li>ไฟล์ผลรายโมดูล: ชื่อ เลขบัตรประชาชน เบอร์โทร เกรดแต่ละโมดูล</li><li>ไฟล์ระดับทักษะ</li><li>ไฟล์เกณฑ์ ซึ่งอธิบายรายละเอียดหลักสูตร โมดูล และคำอธิบายทักษะระดับ 1 ถึง 3</li></ul>
+    ถามแม่แบบล่าสุดจาก MLii ก่อน</div></div></li>
+  <li><div><b>แยกผลมาตรฐานอาชีพ</b><div class="d">ผลสอบ สคช. ไม่นับรวมเกรด รายงานแยกต่อ สคช. ภายใน 15 วันหลังจบ</div></div></li>
+</ol>
+
+<div class="box">
+  <span class="lbl navy">เครื่องมือช่วย</span>
+  <p>ทำเอกสารอธิบายการประเมินให้ผู้เรียน (หน้าเดียว) แสดงว่าคะแนนแต่ละชิ้นไปเป็นเกรดและทักษะอย่างไร ลดคำถามและข้อโต้แย้งตอนประกาศผล</p>
+</div>
+
+<div class="box warn">
+  <span class="lbl warn">ข้อควรระวัง</span>
+  <ul>
+    <li>ไฟล์คะแนนเป็นข้อมูลส่วนบุคคล แชร์เฉพาะอาจารย์ที่เกี่ยวข้อง สำรองก่อนแก้สูตรทุกครั้ง</li>
+    <li>ถ้าเปลี่ยนสูตรระหว่างรุ่น ต้องแจ้งผู้เรียนเป็นลายลักษณ์อักษร</li>
+  </ul>
+</div>
+<nav class="pn" aria-label="หน้าก่อนและถัดไป">
+<a href="p5-operation.html"><small>ก่อนหน้า</small>P5 ดำเนินการรายโมดูล</a>
+<a class="next" href="p7-certificate.html"><small>ถัดไป</small>P7 ออกใบประกาศ</a>
+</nav>
+<footer>คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่ ปรับปรุง 24 ต.ค. 2569 สรุปจากการดำเนินงานรุ่น 1 (2568) และรุ่น 2 (2569) ใช้เป็นแนวทาง ตรวจระเบียบและอัตราล่าสุดกับฝ่ายการเงินทุกครั้ง</footer>
+</main>
+</div>
+<script>
+(function () {
+  var b = document.querySelector('.menu-btn'), s = document.getElementById('side');
+  if (b && s) b.addEventListener('click', function () {
+    var o = s.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+  });
+})();
+</script>
+
+</body>
+</html>

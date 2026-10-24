@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เช็กลิสต์ทั้งรุ่น | คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่</title>
+<meta name="description" content="C1 เช็กลิสต์ทั้งรุ่น">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+Thai:wght@600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <a class="brand" href="index.html">คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่<span>Non-Degree สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์ มฟล.</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="side">สารบัญ</button>
+</div></header>
+<div class="shell">
+<nav class="side" id="side" aria-label="สารบัญ">
+<div class="grp">เริ่มต้น</div><ol>
+<li><a href="index.html"><span class="n">00</span><span>ภาพรวมและปฏิทินทั้งรุ่น</span></a></li>
+<li><a href="roles.html"><span class="n">01</span><span>ใครทำอะไร</span></a></li>
+<li><a href="files.html"><span class="n">02</span><span>โครงสร้างไฟล์</span></a></li>
+</ol>
+<div class="grp">ขั้นตอนตามช่วง</div><ol>
+<li><a href="p1-proposal.html"><span class="n">P1</span><span>ข้อเสนอและขออนุมัติ</span></a></li>
+<li><a href="p2-design.html"><span class="n">P2</span><span>ออกแบบหลักสูตร</span></a></li>
+<li><a href="p3-admission.html"><span class="n">P3</span><span>ประชาสัมพันธ์และรับสมัคร</span></a></li>
+<li><a href="p4-prelaunch.html"><span class="n">P4</span><span>เตรียมก่อนเปิด</span></a></li>
+<li><a href="p5-operation.html"><span class="n">P5</span><span>ดำเนินการรายโมดูล</span></a></li>
+<li><a href="p6-assessment.html"><span class="n">P6</span><span>ประเมินผลและส่งคะแนน</span></a></li>
+<li><a href="p7-certificate.html"><span class="n">P7</span><span>ออกใบประกาศ</span></a></li>
+<li><a href="p8-closeout.html"><span class="n">P8</span><span>ปิดโครงการ</span></a></li>
+</ol>
+<div class="grp">การเงินและอนุมัติ</div><ol>
+<li><a href="finance.html"><span class="n">F1</span><span>การเงิน</span></a></li>
+<li><a href="approvals.html"><span class="n">F2</span><span>เอกสารและการอนุมัติ</span></a></li>
+</ol>
+<div class="grp">เครื่องมือ</div><ol>
+<li><a href="checklist.html" aria-current="page"><span class="n">C1</span><span>เช็กลิสต์ทั้งรุ่น</span></a></li>
+<li><a href="lessons.html"><span class="n">C2</span><span>บทเรียนและข้อควรระวัง</span></a></li>
+</ol>
+</nav>
+<main>
+<div class="eyebrow">C1 เช็กลิสต์</div>
+<h1>เช็กลิสต์ทั้งรุ่น</h1>
+<p class="lede">ติ๊กได้ทันที สถานะจะจำไว้ในเบราว์เซอร์ของเครื่องนี้เท่านั้น ไม่ส่งไปที่ใด ถ้าต้องการใช้ร่วมกันในทีมให้คัดลอกไปไว้ในไฟล์ติดตามงานของหน่วยงาน</p>
+<div class="ck-tools"><span>ทำแล้ว <b id="ck-count" class="mono">0</b></span><button type="button" id="ck-reset">ล้างทั้งหมด</button><button type="button" onclick="window.print()">พิมพ์</button></div>
+<h2>P1 ข้อเสนอและขออนุมัติ</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c01"><span>ลงทะเบียนขอรับการประเมินรุ่นก่อน (ถ้าเป็นรุ่นต่อ)<span class="when">T-7 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c02"><span>ได้แบบฟอร์ม TOR หลักสูตรฉบับล่าสุดจาก สป.อว.<span class="when">T-6 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c03"><span>MOU หรือหนังสือยืนยันพันธมิตรภาคอุตสาหกรรม<span class="when">T-6 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c04"><span>สไลด์นำเสนอผลรุ่นก่อนตามแนวทาง สป.อว.<span class="when">T-5 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c05"><span>ได้หนังสืออนุมัติพร้อมข้อเสนอแนะ<span class="when">T-3 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c06"><span>แก้ TOR ครบทุกข้อเสนอแนะ ทำแบบสรุปการแก้ไขพร้อมเลขหน้า<span class="when">T-1 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c07"><span>อัปโหลดชุดส่ง (สรุปการแก้ไข รายงานรุ่นก่อน TOR ฉบับแก้)<span class="when">T-1 เดือน</span></span></label></li>
+</ul>
+<h2>P2 ออกแบบหลักสูตร</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c08"><span>ล็อก PLO Sub-PLO และทักษะ ตรวจให้ตรงกันทุกตาราง<span class="when">T-5 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c09"><span>ตารางโมดูล ชั่วโมงบรรยายและปฏิบัติ ตรงกับ TOR<span class="when">T-4 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c10"><span>ชิ้นงานและ rubric ของแต่ละโมดูล<span class="when">T-3 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c11"><span>แผนการสอนรายสัปดาห์ (ไฟล์เดียว) พร้อมผู้สอนหลัก<span class="when">T-2 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c12"><span>เกณฑ์ผ่านและกติกาการเข้าเรียนเป็นลายลักษณ์อักษร<span class="when">T-2 เดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c13"><span>จับคู่หน่วยสมรรถนะ สคช. และจุดประเมิน (ถ้ามี)<span class="when">T-2 เดือน</span></span></label></li>
+</ul>
+<h2>P3 ประชาสัมพันธ์และรับสมัคร</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c14"><span>ส่งข้อมูลประชาสัมพันธ์ให้ MLii<span class="when">T-8 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c15"><span>ฟอร์มรับสมัคร + แบบทดสอบก่อนเรียน<span class="when">T-8 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c16"><span>กรรมการสัมภาษณ์ 2 ชุด rubric เดียวกัน<span class="when">T-5 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c17"><span>ประกาศผล ตัวจริง ตัวสำรอง เส้นตายตอบรับ<span class="when">T-4 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c18"><span>แบบยืนยันสิทธิ์ เก็บเลขบัตรประชาชน ข้อมูลที่พัก อาหาร ไซซ์เสื้อ<span class="when">T-4 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c19"><span>รายชื่อเข้า nxtgenhedb.com + หนังสือแจ้งปลัดกระทรวง อว.<span class="when">30 มิ.ย.</span></span></label></li>
+<li><label><input type="checkbox" id="c20"><span>แจ้งรายชื่อเปลี่ยนแปลง (ถ้ามี)<span class="when">31 ก.ค.</span></span></label></li>
+</ul>
+<h2>P4 เตรียมก่อนเปิด</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c21"><span>แผนงบรายเดือนในแม่แบบ แยกรายการจัดจ้าง<span class="when">T-8 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c22"><span>ใบเสนอราคาสถานที่ ให้แยกบิลตามหมวด<span class="when">T-8 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c23"><span>บันทึกขออนุมัติกรอบงบรายกิจกรรม<span class="when">T-6 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c24"><span>บันทึกขอยืมเงินทดรองมหาวิทยาลัย<span class="when">T-6 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c25"><span>TOR จ้างเหมาทุกรายการ<span class="when">T-6 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c26"><span>หนังสือเชิญวิทยากร + เก็บสำเนาบัตรและบัญชี<span class="when">T-4 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c27"><span>คู่มือผู้เรียนเผยแพร่แล้ว<span class="when">T-4 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c28"><span>Zoom Classroom กลุ่มสื่อสาร ฟอร์มเช็กชื่อพร้อม<span class="when">T-2 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c29"><span>ยืนยันห้องพัก อาหาร rooming list<span class="when">T-2 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c30"><span>เปิดบัญชีเครื่องมือ เก็บใบเสร็จ<span class="when">T-2 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c31"><span>ปฐมนิเทศออนไลน์<span class="when">T-1 สัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c32"><span>รายงานความก้าวหน้าต่อผู้บริหาร<span class="when">T-1 สัปดาห์</span></span></label></li>
+</ul>
+<h2>P5 ดำเนินการรายโมดูล (ทำซ้ำทุกเดือน)</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c33"><span>บันทึกขออนุมัติเดือนที่ N ได้รับอนุมัติแล้ว<span class="when">ก่อนเดือน</span></span></label></li>
+<li><label><input type="checkbox" id="c34"><span>สื่อการสอนและรหัสเช็กชื่อพร้อม<span class="when">ก่อนสัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c35"><span>บันทึกวิดีโอ เช็กชื่อ อัปโหลด<span class="when">ทุกคาบ</span></span></label></li>
+<li><label><input type="checkbox" id="c36"><span>ติดตามผู้ขาดเรียนและงานค้าง<span class="when">ทุกสัปดาห์</span></span></label></li>
+<li><label><input type="checkbox" id="c37"><span>Sprint Showcase + รับชุดส่งต่อ<span class="when">ท้ายโมดูล</span></span></label></li>
+<li><label><input type="checkbox" id="c38"><span>ปิดชุดเอกสารเบิกจ่ายส่งการเงิน<span class="when">30 วันหลัง</span></span></label></li>
+<li><label><input type="checkbox" id="c39"><span>คำนวณงบคงเหลือใหม่<span class="when">หลังอนุมัติ</span></span></label></li>
+</ul>
+<h2>P6 ประเมินผลและส่งคะแนน</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c40"><span>ประกาศกำหนดส่งคะแนนทุกโมดูล<span class="when">ต้นรุ่น</span></span></label></li>
+<li><label><input type="checkbox" id="c41"><span>อาจารย์กรอกคะแนนดิบครบ<span class="when">ท้ายโมดูล</span></span></label></li>
+<li><label><input type="checkbox" id="c42"><span>ตรวจช่องว่างและผู้เสี่ยงไม่ผ่าน<span class="when">ท้ายโมดูล</span></span></label></li>
+<li><label><input type="checkbox" id="c43"><span>ไฟล์นำเข้าผลรายโมดูลและระดับทักษะตามแม่แบบ<span class="when">จบหลักสูตร</span></span></label></li>
+<li><label><input type="checkbox" id="c44"><span>รายงานผลต่อ สคช. (ถ้ามี)<span class="when">15 วันหลังจบ</span></span></label></li>
+</ul>
+<h2>P7 ออกใบประกาศ</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c45"><span>รายชื่อผู้ผ่านลงชื่อรับรอง<span class="when">จบหลักสูตร</span></span></label></li>
+<li><label><input type="checkbox" id="c46"><span>ตรวจชื่อ ชื่อหลักสูตร วันที่ ผู้ลงนาม<span class="when">จบหลักสูตร</span></span></label></li>
+<li><label><input type="checkbox" id="c47"><span>ส่งไฟล์ให้ MLii ออกใบประกาศ<span class="when">จบหลักสูตร</span></span></label></li>
+<li><label><input type="checkbox" id="c48"><span>มอบใบประกาศและเก็บทะเบียนการรับ<span class="when">30 วันหลังจบ</span></span></label></li>
+</ul>
+<h2>P8 ปิดโครงการ</h2>
+<ul class="ck">
+<li><label><input type="checkbox" id="c49"><span>ตรวจรับงวดสุดท้ายของงานจ้าง<span class="when">จบหลักสูตร</span></span></label></li>
+<li><label><input type="checkbox" id="c50"><span>ใบเสร็จในนาม สป.อว.<span class="when">15 วันหลังได้เงิน</span></span></label></li>
+<li><label><input type="checkbox" id="c51"><span>ล้างหนี้ยืมเงินทดรอง<span class="when">หลังได้เงิน</span></span></label></li>
+<li><label><input type="checkbox" id="c52"><span>รายงานฉบับสมบูรณ์เข้าเล่ม + หนังสือนำส่ง<span class="when">1 เดือนหลังจบ</span></span></label></li>
+<li><label><input type="checkbox" id="c53"><span>อัปเดตผู้สำเร็จและรายงานใน nxtgenhedb.com<span class="when">1 เดือนหลังจบ</span></span></label></li>
+<li><label><input type="checkbox" id="c54"><span>แคชเชียร์เช็คคืนเงินเหลือ<span class="when">1 เดือนหลังจบ</span></span></label></li>
+<li><label><input type="checkbox" id="c55"><span>ถอดบทเรียน + สำรวจความพึงพอใจ<span class="when">1 เดือนหลังจบ</span></span></label></li>
+<li><label><input type="checkbox" id="c56"><span>ลงทะเบียนขอรับการประเมินเพื่อเปิดรุ่นถัดไป<span class="when">1 เดือนหลังจบ</span></span></label></li>
+</ul>
+<nav class="pn" aria-label="หน้าก่อนและถัดไป">
+<a href="approvals.html"><small>ก่อนหน้า</small>F2 เอกสารและการอนุมัติ</a>
+<a class="next" href="lessons.html"><small>ถัดไป</small>C2 บทเรียนและข้อควรระวัง</a>
+</nav>
+<footer>คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่ ปรับปรุง 24 ต.ค. 2569 สรุปจากการดำเนินงานรุ่น 1 (2568) และรุ่น 2 (2569) ใช้เป็นแนวทาง ตรวจระเบียบและอัตราล่าสุดกับฝ่ายการเงินทุกครั้ง</footer>
+</main>
+</div>
+<script>
+(function () {
+  var b = document.querySelector('.menu-btn'), s = document.getElementById('side');
+  if (b && s) b.addEventListener('click', function () {
+    var o = s.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+  });
+})();
+</script>
+<script>
+(function () {
+  var KEY = 'nd-handbook-checklist-v1', st = {};
+  try { st = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { st = {}; }
+  var boxes = document.querySelectorAll('.ck input[type=checkbox]');
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+  function count() {
+    var done = 0; boxes.forEach(function (b) { if (b.checked) done++; });
+    var el = document.getElementById('ck-count'); if (el) el.textContent = done + ' / ' + boxes.length;
+  }
+  boxes.forEach(function (b) {
+    if (st[b.id]) b.checked = true;
+    b.addEventListener('change', function () { st[b.id] = b.checked; save(); count(); });
+  });
+  var r = document.getElementById('ck-reset');
+  if (r) r.addEventListener('click', function () {
+    if (!confirm('ล้างเครื่องหมายทั้งหมด?')) return;
+    st = {}; save(); boxes.forEach(function (b) { b.checked = false; }); count();
+  });
+  count();
+})();
+</script>
+</body>
+</html>
