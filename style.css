@@ -39,7 +39,7 @@ code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .86em;
 header.top { position: sticky; top: 0; z-index: 10; background: var(--panel); border-bottom: 1px solid var(--line); }
 .top-in { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; padding: 10px 16px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); min-width: 0; }
-.brand .logo { height: 42px; width: auto; display: block; flex: none; }
+.brand .logo { height: 26px; width: auto; display: block; flex: none; }
 .brand .t { font-size: 17px; font-weight: 700; line-height: 1.35; }
 .brand .org { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: .02em; margin-top: 1px; line-height: 1.4; }
 .btn { display: inline-block; white-space: nowrap; text-decoration: none; border: 1px solid var(--accent); background: transparent; color: var(--accent); border-radius: var(--radius); padding: 5px 12px; cursor: pointer; font-size: 14px; }
@@ -50,7 +50,7 @@ header.top { position: sticky; top: 0; z-index: 10; background: var(--panel); bo
 @media (max-width: 560px) {
   .top-in { flex-wrap: nowrap; padding: 8px 16px; }
   .brand { gap: 10px; }
-  .brand .logo { height: 30px; }
+  .brand .logo { height: 22px; }
   .brand .t { font-size: 15px; }
   .brand .org { font-size: 11px; }
 }
@@ -169,7 +169,7 @@ pre.tree .c { color: var(--muted); font-family: "Sarabun", system-ui, sans-serif
 .pn .next { text-align: right; grid-column: 2; }
 
 footer { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 14px; font-size: 13.5px; color: var(--muted); display: flex; gap: 12px; align-items: flex-start; }
-footer img { height: 30px; width: auto; flex: none; margin-top: 2px; }
+footer img { height: 18px; width: auto; flex: none; margin-top: 2px; }
 footer b { color: var(--ink); font-weight: 600; }
 
 @media print {
