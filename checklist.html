@@ -7,13 +7,17 @@
 <meta name="description" content="C1 เช็กลิสต์ทั้งรุ่น">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+Thai:wght@600;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/ADTlogo.png">
 </head>
 <body>
 <header class="top"><div class="top-in">
-  <a class="brand" href="index.html">คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่<span>Non-Degree สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์ มฟล.</span></a>
-  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="side">สารบัญ</button>
+  <a class="brand" href="index.html">
+    <img class="logo" src="assets/ADTlogo.png" alt="สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์ มฟล." onerror="this.style.display='none'">
+    <div><div class="t">คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่</div><div class="org">หลักสูตร Non-Degree - สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์ มฟล.</div></div>
+  </a>
+  <button class="btn quiet menu-btn" type="button" aria-expanded="false" aria-controls="side">สารบัญ</button>
 </div></header>
 <div class="shell">
 <nav class="side" id="side" aria-label="สารบัญ">
@@ -45,7 +49,7 @@
 <div class="eyebrow">C1 เช็กลิสต์</div>
 <h1>เช็กลิสต์ทั้งรุ่น</h1>
 <p class="lede">ติ๊กได้ทันที สถานะจะจำไว้ในเบราว์เซอร์ของเครื่องนี้เท่านั้น ไม่ส่งไปที่ใด ถ้าต้องการใช้ร่วมกันในทีมให้คัดลอกไปไว้ในไฟล์ติดตามงานของหน่วยงาน</p>
-<div class="ck-tools"><span>ทำแล้ว <b id="ck-count" class="mono">0</b></span><button type="button" id="ck-reset">ล้างทั้งหมด</button><button type="button" onclick="window.print()">พิมพ์</button></div>
+<div class="ck-tools"><span>ทำแล้ว <b id="ck-count" class="mono">0</b></span><button class="btn quiet" type="button" id="ck-reset">ล้างทั้งหมด</button><button class="btn quiet" type="button" onclick="window.print()">พิมพ์</button></div>
 <h2>P1 ข้อเสนอและขออนุมัติ</h2>
 <ul class="ck">
 <li><label><input type="checkbox" id="c01"><span>ลงทะเบียนขอรับการประเมินรุ่นก่อน (ถ้าเป็นรุ่นต่อ)<span class="when">T-7 เดือน</span></span></label></li>
@@ -130,7 +134,7 @@
 <a href="approvals.html"><small>ก่อนหน้า</small>F2 เอกสารและการอนุมัติ</a>
 <a class="next" href="lessons.html"><small>ถัดไป</small>C2 บทเรียนและข้อควรระวัง</a>
 </nav>
-<footer>คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่ ปรับปรุง 24 ต.ค. 2569 สรุปจากการดำเนินงานรุ่น 1 (2568) และรุ่น 2 (2569) ใช้เป็นแนวทาง ตรวจระเบียบและอัตราล่าสุดกับฝ่ายการเงินทุกครั้ง</footer>
+<footer><img src="assets/ADTlogo.png" alt="" onerror="this.style.display='none'"><div><b>สำนักวิชาเทคโนโลยีดิจิทัลประยุกต์ มหาวิทยาลัยแม่ฟ้าหลวง</b><br>คู่มือบริหารหลักสูตรบัณฑิตพันธุ์ใหม่ ปรับปรุง 24 ต.ค. 2569 สรุปจากการดำเนินงานรุ่น 1 (2568) และรุ่น 2 (2569) ใช้เป็นแนวทาง ตรวจระเบียบและอัตราล่าสุดกับฝ่ายการเงินทุกครั้ง</div></footer>
 </main>
 </div>
 <script>
